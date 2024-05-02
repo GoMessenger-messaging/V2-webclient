@@ -1,13 +1,25 @@
 <script setup lang="ts">
+  const route = useRoute();
+  const location = route.query.location;
 
+  const usernameCookie = useCookie("username");
+  const username = usernameCookie.value;
+
+  if (username) {
+    if (location) {
+      navigateTo(location.toString());
+    } else {
+      navigateTo("/");
+    }
+  }
 </script>
 
 <template>
-  <dev>
+  <div>
     <h1>
-      Login
+      Log in
     </h1>
-  </dev>
+  </div>
 </template>
 
 <style scoped>
