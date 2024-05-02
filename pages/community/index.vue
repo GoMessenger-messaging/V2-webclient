@@ -1,13 +1,9 @@
 <script setup lang="ts">
-
+  navigateTo("/communities")
 </script>
 
 <template>
-  <div>
-    <h1>
-      Channel {{ $route.params.channel }}
-    </h1>
-  </div>
+
 </template>
 
 <style scoped>

@@ -5,8 +5,7 @@
 <template>
   <div>
     <h1>
-      Chat {{ $route.params.account }}
-      <Card />
+      Chat {{ $route.params.chat }}
     </h1>
   </div>
 </template>
