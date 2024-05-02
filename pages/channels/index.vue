@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  let channels = [...Array(0).keys()]
+  let channels: any[] = []
 </script>
 
 <template>
@@ -9,7 +9,7 @@
         Channels
       </h1>
       <div class="flex mt-6">
-        <div class="ml-4">
+        <div>
           <NuxtLink to="/channels/create">
             <div class="flex btn">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

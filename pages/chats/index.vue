@@ -1,5 +1,5 @@
 <script setup lang="ts">
-let chats = [...Array(0).keys()]
+let chats: any[] = []
 </script>
 
 <template>
@@ -9,7 +9,7 @@ let chats = [...Array(0).keys()]
         Chats
       </h1>
       <div class="flex mt-6">
-        <div class="ml-4">
+        <div>
           <NuxtLink to="/chats/create">
             <div class="flex btn">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -22,11 +22,13 @@ let chats = [...Array(0).keys()]
       </div>
     </div>
     <hr class="w-1/2 mx-auto my-8">
-    <CardList v-if="chats.length != 0"/>
-    <div v-else class="flex justify-center items-center">
-      <h3>
-        You aren't in any chats yet.
-      </h3>
+    <div class="mx-48">
+      <CardList v-if="chats.length != 0" :list="chats" />
+      <div v-else class="flex justify-center items-center">
+        <h3>
+          You aren't in any chats yet.
+        </h3>
+      </div>
     </div>
   </div>
 </template>

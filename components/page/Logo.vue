@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <img src="../../assets/Logo.svg" alt="GoMessenger logo" class="h-16" />
+    <img src="../../assets/gomessenger/Logo.svg" alt="GoMessenger logo" class="h-16" />
   </div>
 </template>
 

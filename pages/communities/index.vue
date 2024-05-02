@@ -1,5 +1,5 @@
 <script setup lang="ts">
-let communities = [...Array(0).keys()]
+let communities: any[] = []
 </script>
 
 <template>
@@ -9,7 +9,7 @@ let communities = [...Array(0).keys()]
         Communities
       </h1>
       <div class="flex mt-6">
-        <div class="ml-4">
+        <div>
           <NuxtLink to="/communities/create">
             <div class="flex btn">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
