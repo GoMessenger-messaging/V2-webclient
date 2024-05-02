@@ -4,9 +4,9 @@
 
 <template>
   <div>
-    <h3>
-      Account
-    </h3>
+    <h1>
+      Profile page for account {{ $route.params.account }}
+    </h1>
   </div>
 </template>
 

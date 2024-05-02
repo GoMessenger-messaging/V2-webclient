@@ -5,7 +5,8 @@
 <template>
   <div>
     <h1>
-      Sign up
+      Chat {{ $route.params.account }}
+      <Card />
     </h1>
   </div>
 </template>

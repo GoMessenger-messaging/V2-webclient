@@ -1,41 +1,48 @@
 <script setup lang="ts">
 
-import AccountIcon from "~/components/AccountIcon.vue";
 </script>
 
 <template>
   <div class="flex justify-between h-20 bg-gray-100 shadow-2xl shadow-gray-300">
     <div class="flex items-center">
       <NuxtLink to="/" class="px-8">
-        <Logo />
+        <PageLogo />
       </NuxtLink>
       <ul class="flex gap-x-8">
-        <li class="">
+        <li>
           <NuxtLink to="/chats">
-            <h3>
-              Chats
-            </h3>
+            <div class="btn">
+              <h3>
+                Chats
+              </h3>
+            </div>
           </NuxtLink>
         </li>
-        <li class="">
+        <li>
           <NuxtLink to="/channels">
-            <h3>
-              Channels
-            </h3>
+            <div class="btn">
+              <h3>
+                Channels
+              </h3>
+            </div>
           </NuxtLink>
         </li>
-        <li class="">
+        <li>
           <NuxtLink to="/communities">
-            <h3>
-              Communities
-            </h3>
+            <div class="btn">
+              <h3>
+                Communities
+              </h3>
+            </div>
           </NuxtLink>
         </li>
       </ul>
     </div>
-    <div class="flex items-center">
-      <NuxtLink to="/account" class="px-8">
-        <AccountIcon />
+    <div class="flex items-center mr-8">
+      <NuxtLink to="/account">
+        <div class="btn">
+
+        </div>
       </NuxtLink>
     </div>
   </div>

@@ -4,7 +4,9 @@
 
 <template>
   <div>
-    <img src="assets/Logo.svg" alt="GoMessenger logo" class="h-16" />
+    <h1>
+      Create a new community
+    </h1>
   </div>
 </template>
 

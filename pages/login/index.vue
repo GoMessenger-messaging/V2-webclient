@@ -3,7 +3,11 @@
 </script>
 
 <template>
-
+  <dev>
+    <h1>
+      Login
+    </h1>
+  </dev>
 </template>
 
 <style scoped>

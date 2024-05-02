@@ -5,7 +5,7 @@
 <template>
   <div>
     <h1>
-      Sign up
+      Community {{ $route.params.community }}
     </h1>
   </div>
 </template>

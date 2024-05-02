@@ -3,16 +3,13 @@
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col h-screen">
     <header>
-      <Header />
+      <PageHeader />
     </header>
-    <div class="m-8">
+    <div class="flex-grow overflow-scroll">
       <slot />
     </div>
-    <footer>
-      <Footer />
-    </footer>
   </div>
 </template>
 

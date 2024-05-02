@@ -4,9 +4,7 @@
 
 <template>
   <div>
-    <h1>
-      Sign up
-    </h1>
+    <img src="../../assets/Logo.svg" alt="GoMessenger logo" class="h-16" />
   </div>
 </template>
 

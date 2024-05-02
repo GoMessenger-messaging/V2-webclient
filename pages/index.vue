@@ -3,9 +3,11 @@
 </script>
 
 <template>
-  <p>
-    GoMessenger webclient
-  </p>
+  <div>
+    <h1>
+      GoMessenger
+    </h1>
+  </div>
 </template>
 
 <style scoped>
