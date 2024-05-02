@@ -1,5 +1,5 @@
 <script setup lang="ts">
-let communities: any[] = []
+  let communities: any[] = []
 </script>
 
 <template>

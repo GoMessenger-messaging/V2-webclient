@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  const usernameCookie = useCookie("username")
-  const username = usernameCookie.value
+  const usernameCookie = useCookie("username");
+  const username = usernameCookie.value;
 </script>
 
 <template>

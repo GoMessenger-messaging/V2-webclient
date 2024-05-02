@@ -1,16 +1,11 @@
 <script setup lang="ts">
-  const route = useRoute();
-  const location = route.query.location;
+  const router = useRouter();
 
   const usernameCookie = useCookie("username");
   const username = usernameCookie.value;
 
   if (username) {
-    if (location) {
-      navigateTo(location.toString());
-    } else {
-      navigateTo("/");
-    }
+    router.back();
   }
 </script>
 
