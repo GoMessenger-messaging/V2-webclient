@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+  const usernameCookie = useCookie("username")
+  const username = usernameCookie.value
 </script>
 
 <template>
@@ -8,7 +9,7 @@
       <NuxtLink to="/" class="px-8">
         <PageLogo />
       </NuxtLink>
-      <ul class="flex gap-x-8">
+      <ul class="flex gap-8">
         <li>
           <NuxtLink to="/chats">
             <div class="btn">
@@ -39,11 +40,29 @@
       </ul>
     </div>
     <div class="flex items-center mr-8">
-      <NuxtLink to="/account">
-        <div class="btn">
-
-        </div>
-      </NuxtLink>
+      <div v-if="username">
+        <NuxtLink to="/account">
+          <div class="btn">
+            <h3>
+              Account
+            </h3>
+          </div>
+        </NuxtLink>
+      </div>
+      <div v-else class="flex gap-8">
+        <NuxtLink to="/login">
+          <div class="btn">
+            <h3>
+              Log in
+            </h3>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/signup">
+          <div class="btn">
+            Sign up
+          </div>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
