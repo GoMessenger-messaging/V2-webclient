@@ -1,5 +1,9 @@
 <script setup lang="ts">
-let chats: any[] = []
+  import LoginBanner from "~/components/LoginBanner.vue";
+
+  const username = useCookie("username").value;
+
+  let chats: any[] = []
 </script>
 
 <template>
@@ -22,13 +26,16 @@ let chats: any[] = []
       </div>
     </div>
     <hr class="w-1/2 mx-auto my-8">
-    <div class="mx-48">
-      <CardList v-if="chats.length != 0" :list="chats" />
+    <div v-if="username">
+      <CardList v-if="chats.length != 0"/>
       <div v-else class="flex justify-center items-center">
         <h3>
-          You aren't in any chats yet.
+          You aren't in any community yet.
         </h3>
       </div>
+    </div>
+    <div v-else>
+      <LoginBanner />
     </div>
   </div>
 </template>

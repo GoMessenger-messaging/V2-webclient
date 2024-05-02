@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import Card from "~/components/element/Card.vue";
+  import Card from "~/components/Card.vue";
 
   const { list } = defineProps(["list"]);
 </script>

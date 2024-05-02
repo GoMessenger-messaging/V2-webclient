@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  import LoginBanner from "~/components/LoginBanner.vue";
+
+  const username = useCookie("username").value;
+
   let channels: any[] = []
 </script>
 
@@ -52,11 +56,16 @@
       </div>
     </div>
     <hr class="w-1/2 mx-auto my-8">
-    <CardList v-if="channels.length != 0"/>
-    <div v-else class="flex justify-center items-center">
-      <h3>
-        You aren't in any channels yet.
-      </h3>
+    <div v-if="username">
+      <CardList v-if="channels.length != 0"/>
+      <div v-else class="flex justify-center items-center">
+        <h3>
+          You aren't in any community yet.
+        </h3>
+      </div>
+    </div>
+    <div v-else>
+      <LoginBanner />
     </div>
   </div>
 </template>
