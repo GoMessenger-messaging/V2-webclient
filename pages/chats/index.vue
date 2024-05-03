@@ -30,7 +30,7 @@
       <CardList v-if="chats.length != 0"/>
       <div v-else class="flex justify-center items-center">
         <h3>
-          You aren't in any community yet.
+          You aren't in any chat yet.
         </h3>
       </div>
     </div>
